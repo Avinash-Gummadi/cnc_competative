@@ -149,7 +149,6 @@ section {
 .sec-heading .sec-title {
   color: #1e2528;
   font-size: 42px;
-  margin-bottom: 32px;
 }
 /* enquiry */
 #chat-circle {
@@ -418,14 +417,14 @@ section {
   }
 }
 
-.banner span {
+.banner span, .bright_lines{
   display: block;
   font-family: "Rufina", serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 20px;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   animation: color-change 1s 2s infinite;
 }
 @-webkit-keyframes color-change {
@@ -1245,4 +1244,9 @@ a.email-a:hover{
 
 .footer .copyright a {
   color: #ff817e;
+}
+
+.bright_lines {
+  font-size: 24px;
+  font-weight: bold;
 }
