@@ -40,7 +40,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
-      emailjs.init("SC7gzCnV87bTYcW5F");
+      emailjs.init("qCLR5Lvey5ITKraIk");
     })();
   </script>
 </head>
@@ -75,28 +75,32 @@
             </select>
           </div>
           <div class="form-group">
-            <input type="text" id="p_number" class="form-control" placeholder="Candidate Number" />
+            <input type="text" id="p_number" class="form-control" placeholder="Candidate Mobile Number" />
           </div>
           <div class="form-group">
             <input type="text" id="p_email" class="form-control" placeholder="Candidate Email" />
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <input type="text" id="p_location" class="form-control" placeholder="Candidate Location" />
-          </div>
+          </div> -->
           <div class="form-group">
-            <select name="" id="service" class="form-control">
+            <select name="service" id="service" class="form-control">
               <option value="">Select Training</option>
-              <option value="Care taker">SSC GD</option>
-              <option value="Physiotheraphy">BANKING</option>
-              <option value="Care service">RAILWAYS</option>
-              <option value="old age home">E CET</option>
-              <option value="machinery medical">EM CET</option>
-              <option value="baby care">NEET</option>
-              <option value="Home nursing">POLYCET</option>
-            </select>
+              <option value="History">History</option>
+              <option value="Economics">Economics</option>
+              <option value="Polity">Polity</option>
+              <option value="Science">Science</option>
+              <option value="Geography">Geography</option>
+              <option value="English">English</option>
+              <option value="General Intelligence and Reasoning">General Intelligence and Reasoning</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Marketing Staff">Marketing Staff</option>
+              <option value="PROS">PROS</option>
+              <option value="Front Office">Front Office</option>
+          </select>          
           </div>
           <span style="color: red;display: none;" id="all_fields2">Fill all the fields</span>
-          <button type="submit" class="chat-submit btn btn-success" id="chat-submit" onClick="sendPatientEmail()">
+          <button type="submit" class="chat-submit btn btn-success" id="chat-submit" onClick="sendCandidateEmail()">
             Send
           </button>
         </form>
@@ -159,7 +163,7 @@
         <div class="col-lg-6 col-md-9 text-center">
           <div class="banner-content">
             <!-- <span>Vishakhapatnam & Hyderabad</span> -->
-            <p>We are there to erase the problems of our students</p>
+            <p>We are here to provide best classes to the students for the competitive exams</p>
             <!-- <a class="video-btn" data-fancybox href="images/intro2.mp4">
               <i class="ti-control-play"></i>
               Watch our story
@@ -177,8 +181,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 m-auto">
           <div class="sec-heading" style="margin-top: 30px;">
-            <h3 class="sec-title" id="services">Our Services</h3>
-            <p class="bright_lines">INTERNSHIPs AVAILABLE FOR ALL GRADUATION STUDENTS AND DIPLOMA STUDENTS</p>
+            <h3 class="sec-title" id="services">Classes We Teach</h3>
+            <p class="bright_lines">BANKING, RAILWAYS, SSC, ECET, EMCET, NEET, POLYCET</p>
           </div>
         </div>
       </div>
@@ -297,32 +301,28 @@
   </section> -->
   <!-- Stats Count End -->
   <!-- Service section start -->
-  <!-- <section class="service">
+  <section class="service">
     <div class="service-caro owl-carousel container">
-      <div class="single-service">
-        <img src="images/career1.png" alt="">
-      </div>
-
-      <div class="single-service">
-        <img src="images/service1.png" alt="">
-      </div>
-
-      <div class="single-service">
-        <img src="images/service2.png" alt="">
-      </div>
-      
-      <div class="single-service">
-        <img src="images/gallery3.png" alt="">
-      </div>
-
-      <div class="single-service">
-        <img src="images/career2.png" alt="">
-      </div>
-
       <div class="single-service">
         <img src="images/gallery1.png" alt="">
       </div>
       
+      <div class="single-service">
+        <img src="images/gallery2.png" alt="">
+      </div>
+
+      <div class="single-service">
+        <img src="images/gallery3.png" alt="">
+      </div>
+      
+      <div class="single-service">
+        <img src="images/gallery4.png" alt="">
+      </div>
+      
+      <div class="single-service">
+        <img src="images/gallery5.png" alt="">
+      </div>
+
       <div class="single-service">
         <img src="images/gallery6.png" alt="">
       </div>
@@ -345,10 +345,6 @@
       
       <div class="single-service">
         <img src="images/gallery11.png" alt="">
-      </div>
-            
-      <div class="single-service">
-        <img src="images/gallery5.png" alt="">
       </div>
       
       <div class="single-service">
@@ -394,28 +390,8 @@
       <div class="single-service">
         <img src="images/gallery22.png" alt="">
       </div>
-      
-      <div class="single-service">
-        <img src="images/gallery23.png" alt="">
-      </div>
-      
-      <div class="single-service">
-        <img src="images/gallery24.png" alt="">
-      </div>
-      
-      <div class="single-service">
-        <img src="images/gallery25.png" alt="">
-      </div>
-      
-      <div class="single-service">
-        <img src="images/gallery26.png" alt="">
-      </div>
-      
-      <div class="single-service">
-        <img src="images/gallery27.png" alt="">
-      </div>
     </div>
-  </section> -->
+  </section>
   <!-- Service section end -->
 
   <!-- About section start -->
@@ -426,7 +402,7 @@
           <div class="sec-heading">
             <img src="images/logo_no_bg.png" alt="">
             <span class="tagline">About Care n Cure</span>
-              <p>"CnC Institute for Competitive Exams deals with internships and training. It was founded in 2020 under the leadership of Shri Vinod Nalla to provide the best assistance for students preparing for competitive exams."</p>
+              <p>"CnC Institute for Competitive Exams deals with BANKING, RAILWAYS, SSC, ECET, EMCET, NEET, POLYCET. It was founded in 2020 under the leadership of Shri Vinod Nalla to provide the best assistance for students preparing for competitive exams."</p>
           </div>
         </div>
       </div>
@@ -435,7 +411,7 @@
   <!-- About section end -->
 
   <!-- Team section start -->
-  <section class="team" style="padding: 20px; padding-top: 0;">
+  <section class="team" style="padding: 0 20px;">
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-4">
@@ -449,7 +425,7 @@
   <!-- Team section end -->
 
   <!-- Testimonial section start -->
-  <!-- <section class="testimonial" id="reviews">
+  <section class="testimonial" id="reviews">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 m-auto">
@@ -464,40 +440,40 @@
         <div class="col-lg-10 col-md-12 m-auto">
           <div class="test-caro owl-carousel">
             <div class="single-tst">
-              <img src="images/reviews1.png" alt="">
+              <img src="images/reviews_1.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews2.png" alt="">
+              <img src="images/reviews_2.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews3.png" alt="">
+              <img src="images/reviews_3.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews4.png" alt="">
+              <img src="images/reviews_4.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews5.png" alt="">
+              <img src="images/reviews_5.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews6.png" alt="">
+              <img src="images/reviews_6.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews7.png" alt="">
+              <img src="images/reviews_7.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews8.png" alt="">
+              <img src="images/reviews_8.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews9.png" alt="">
+              <img src="images/reviews_9.jpeg" alt="">
             </div>
             <div class="single-tst">
-              <img src="images/reviews10.png" alt="">
+              <img src="images/reviews_10.jpeg" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- Testimonial section end -->
 
   <!-- Appointment section start -->
@@ -522,11 +498,18 @@
         </div>
         <div id="formID" style="display: none;">
           <button type="button" class="btn btn-success"
-            style="border-radius: 0;border-top-left-radius: 7px;border-top-right-radius: 7px;"
-            onClick="openform(2)">Faculty</button>
-          <button type="button" class="btn btn-success" onClick="openform(3)"
-            style="border-radius: 0;">Marketer</button>
-          <button type="button" class="btn btn-success" onClick="openform(4)" style="border-radius: 0;">Manager</button>
+          style="border-radius: 0; border-top-left-radius: 7px; border-top-right-radius: 7px;"
+          onClick="openform('History')">History</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Economics')">Economics</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Polity')">Polity</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Science')">Science</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Geography')">Geography</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('English')">English</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('General Intelligence and Reasoning')">General Intelligence and Reasoning</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Mathematics')">Mathematics</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Marketing Staff')">Marketing Staff</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('PROS')">PROS</button>
+          <button type="button" class="btn btn-success" style="border-radius: 0;" onClick="openform('Front Office')">Front Office</button>  
           <button type="button" class="btn btn-danger" onClick="openform(5)"
             style="border-radius: 0;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;">Close</button>
         </div>
@@ -534,7 +517,7 @@
           <form class="col-md-8 py-3" onsubmit="return !2" id="formID1" style="display: none;">
             <div id="succ_rply" class="text-center" style="display: none;">
               <h1>Your response recorded successfully</h1>
-              <button type="button" class="btn btn-danger" onClick="openform()">Close</button>
+              <button type="button" class="btn btn-danger" onClick="openform(6)">Close</button>
             </div>
             <div id="form_div">
               <h1 id="heading" class="text-center">Application</h1>
@@ -564,9 +547,9 @@
                 </div>
               </div>
               <div class="d-flex flex-wrap" style="gap: 2px;">
-                <div class="form-group" style="flex: 30%;">
+                <!-- <div class="form-group" style="flex: 30%;">
                   <input type="text" class="form-control" id="place" placeholder="Enter Native Place" required />
-                </div>
+                </div> -->
                 <div class="form-group" style="flex: 60%;">
                   <input type="text" class="form-control" id="address" placeholder="Address" required />
                 </div>
@@ -583,32 +566,32 @@
               <div class="form-group">
                 <input type="text" class="form-control" id="experience" placeholder="Previous Experience" required />
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <select name="Branch" id="branch" class="form-control" required>
                   <option value="">Branch to Work At</option>
                   <option value="Vishakhapatnam">Vishakhapatnam</option>
                   <option value="Hyderabad">Hyderabad</option>
                 </select>
-              </div>
-              <div class="d-flex flex-wrap" style="gap: 2px;">
+              </div> -->
+              <!-- <div class="d-flex flex-wrap" style="gap: 2px;">
                 <div class="form-group" style="flex: 45%;">
                   <input type="text" class="form-control" id="religion" placeholder="Enter Religion" required />
                 </div>
                 <div class="form-group" style="flex: 45%;">
                   <input type="text" class="form-control" id="country" placeholder="Nationality" required />
                 </div>
-              </div>
+              </div> -->
               <div class="form-group">
                 <input type="text" class="form-control" id="aadhar" placeholder="Aadhar No." required />
               </div>
-              <div class="d-flex flex-wrap" style="gap: 2px;">
+              <!-- <div class="d-flex flex-wrap" style="gap: 2px;">
                 <div class="form-group" style="flex: 45%;">
                   <input type="text" class="form-control" id="account" placeholder="Bank Account No." required />
                 </div>
                 <div class="form-group" style="flex: 45%;">
                   <input type="text" class="form-control" id="ifsc" placeholder="IFSC Code" required />
                 </div>
-              </div>
+              </div> -->
               <span style="color: red;display: none;" id="all_fields">Fill all the fields</span>
               <button type="button" class="btn btn-danger" onClick="openform()">Close</button>
               <button type="submit" class="btn btn-success" id="submitID" onClick="sendEmail()">Submit</button>
