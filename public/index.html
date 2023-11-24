@@ -14,29 +14,30 @@
 
   <title>CnC Institute for Competative Exams</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
-  <script>// Import the functions you need from the SDKs you need
-  // import { initializeApp } from "firebase/app";
-  // import { getAnalytics } from "firebase/analytics";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
   
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  // const firebaseConfig = {
-  //   apiKey: "AIzaSyAEjQrcoqtJGqolAiZSe6IirY_yafQoF8I",
-  //   authDomain: "carencure-7f24d.firebaseapp.com",
-  //   databaseURL: "https://carencure-7f24d-default-rtdb.asia-southeast1.firebasedatabase.app",
-  //   projectId: "carencure-7f24d",
-  //   storageBucket: "carencure-7f24d.appspot.com",
-  //   messagingSenderId: "109591154583",
-  //   appId: "1:109591154583:web:fe93bd642d48ad17a73ed2",
-  //   measurementId: "G-831VD7G0L0"
-  // };
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB5DhS41LQbE_8EFNrpJ44zgpHpZalLstU",
+      authDomain: "cnc-competitive.firebaseapp.com",
+      projectId: "cnc-competitive",
+      storageBucket: "cnc-competitive.appspot.com",
+      messagingSenderId: "246408915237",
+      appId: "1:246408915237:web:b9b2bd7be3faf8ad6752cc",
+      measurementId: "G-GWP11ZJBKV"
+    };
   
-  // Initialize Firebase
-  // const app = initializeApp(firebaseConfig);
-  // const analytics = getAnalytics(app);
-</script>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
